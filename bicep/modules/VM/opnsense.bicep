@@ -53,7 +53,7 @@ module trustedNic '../vnet/nic.bicep' = if(multiNicSupport){
   }
 }
 
-resource OPNsense 'Microsoft.Compute/virtualMachines@2021-03-01' = {
+resource OPNsense 'Microsoft.Compute/virtualMachines@2022-03-01' = {
   name: virtualMachineName
   location: Location
   properties: {
@@ -71,8 +71,8 @@ resource OPNsense 'Microsoft.Compute/virtualMachines@2021-03-01' = {
       }
       imageReference: {
         publisher: 'thefreebsdfoundation'
-        offer: 'freebsd-13_0'
-        sku: '13_0-release'
+        offer: 'freebsd-13_1'
+        sku: '13_1-release'
         version: 'latest'
       }
     }
@@ -101,13 +101,13 @@ resource OPNsense 'Microsoft.Compute/virtualMachines@2021-03-01' = {
     }
   }
   plan: {
-    name: '13_0-release'
+    name: '13_1-release'
     publisher: 'thefreebsdfoundation'
-    product: 'freebsd-13_0'
+    product: 'freebsd-13_1'
   }
 }
 
-resource vmext 'Microsoft.Compute/virtualMachines/extensions@2015-06-15' = {
+resource vmext 'Microsoft.Compute/virtualMachines/extensions@2022-03-01' = {
   name: '${OPNsense.name}/CustomScript'
   location: Location
   properties: {
