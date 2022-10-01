@@ -32,7 +32,7 @@ on:
   #  - cron: "0 23 * * 2"
 env:
   RG: "Automation-Actions-OPNAZURE-Active-Active-${{ github.run_number }}" #The resource group we're deploying to.
-  Location: "F"
+  Location: "northeurope"
   ParamFilePath: "bicep/main.parameters.json" #Path to parameter file
   TemplateFilePath: "bicep/main.bicep"
   OPNsense-PIP: "OPNsense-PublicIP"
