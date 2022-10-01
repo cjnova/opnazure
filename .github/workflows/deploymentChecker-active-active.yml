@@ -81,7 +81,7 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v1
         with:
-          creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
           enable-AzPSSession: false
           environment: azurecloud
           allow-no-subscriptions: false
@@ -108,7 +108,7 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v1
         with:
-          creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
           enable-AzPSSession: false
           environment: azurecloud
           allow-no-subscriptions: false
@@ -132,7 +132,7 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v1
         with:
-          creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
           enable-AzPSSession: true
           environment: azurecloud
           allow-no-subscriptions: false
@@ -150,7 +150,7 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v1
         with:
-          creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
           enable-AzPSSession: true
           environment: azurecloud
           allow-no-subscriptions: false
