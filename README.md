@@ -117,4 +117,4 @@ Please use Github [issues tab](https://github.com/cjnova/opnazure/issues) to pro
 
 ## Credits
 
-Thanks for direct feedbacks and contributions from: [Daniel Mauser](https://github.com/dmauser), Adam Torkar, Brian Wurzbacher, [Victor Santana](https://github.com/welasco) and Brady Sondreal.
+Thanks for direct feedbacks and contributions from: [Daniel Mauser](https://github.com/cjnova), Adam Torkar, Brian Wurzbacher, [Victor Santana](https://github.com/welasco) and Brady Sondreal.
