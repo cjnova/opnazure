@@ -65,7 +65,7 @@
       },
       "OpnScriptURI": {
         "type": "string",
-        "defaultValue": "https://raw.githubusercontent.com/cjnova/opnazure/master/scripts/",
+        "defaultValue": "https://raw.githubusercontent.com/cjnova/opnazure/dev/scripts/",
         "metadata": {
           "description": "URI for Custom OPN Script and Config"
         }

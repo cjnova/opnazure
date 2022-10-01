@@ -43,7 +43,7 @@ fi
 
 #OPNSense default configuration template
 #fetch https://raw.githubusercontent.com/cjnova/opnazure/dev_active_active/scripts/$1
-#fetch https://raw.githubusercontent.com/cjnova/opnazure/master/scripts/$1
+#fetch https://raw.githubusercontent.com/cjnova/opnazure/dev/scripts/$1
 #cp $1 /usr/local/etc/config.xml
 
 # 1. Package to get root certificate bundle from the Mozilla Project (FreeBSD)
