@@ -102,7 +102,7 @@
             {
               "name": "OpnScriptURI",
               "type": "Microsoft.Common.TextBox",
-              "label": "URL for OPNSense scripts. All required scripts will be downloaded from this URL and must end with /.",
+              "label": "URL for OPNSense scritps. All required scripts will be downloaded from this URL and must end with /.",
               "toolTip": "All scripts must be under this URL path, check the expected content under scripts folder in https://github.com/dmauser/opnazure/tree/master/scripts.",
               "defaultValue": "https://raw.githubusercontent.com/cjnova/opnazure/dev/scripts/"
             },
