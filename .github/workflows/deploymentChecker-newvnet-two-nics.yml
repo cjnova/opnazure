@@ -110,7 +110,7 @@ jobs:
           allow-no-subscriptions: false
 
       - name: Deploy Infrastructure
-        id: deployAks
+        id: deployOPNSense
         uses: Azure/cli@v1
         with:
           azcliversion: ${{ env.AZCLIVERSION }}
