@@ -98,9 +98,18 @@ Here are few considerations to deploy this solution correctly:
 
 ## Accepting FreeBSD terms in Azure Portal
 
+![Step 1](images/LicenseTerms1.png)
+![Step 2](images/LicenseTerms2.png)
+
 ## Accepting FreeBSD terms with PowerShell
 
+From a Powershell console with Azure subscriptions access:
+
+`Get-AzMarketplaceTerms -Publisher 'thefreebsdfoundation' -Product 'freebsd-13_1' -Name '13_1-release' | Set-AzMarketplaceTerms -Accept`
+
 ## Accepting FreeBSD terms with Az Cli
+
+`az vm image terms accept --urn thefreebsdfoundation:freebsd-13_0:13_0-release:latest`
 
 ## Usage
 
@@ -112,12 +121,10 @@ Here are few considerations to deploy this solution correctly:
 
 ## Roadmap
 
-Build custom deployment form
-
 ## Feedbacks
 
 Please use Github [issues tab](https://github.com/cjnova/opnazure/issues) to provide feedback.
 
 ## Credits
 
-Thanks initial repo creation to: [Daniel Mauser](https://github.com/dmauser), Adam Torkar, Brian Wurzbacher, [Victor Santana](https://github.com/welasco) and Brady Sondreal.
+Thanks initial repo creation to: [Daniel Mauser](https://github.com/dmauser), [Victor Santana](https://github.com/welasco).
