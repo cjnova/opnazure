@@ -95,8 +95,6 @@ jobs:
             az network vnet create -g '${{ env.RG }}' -n '${{ env.VNET }}' --address-prefixes '${{ env.VNETAddress }}'
             az network vnet subnet create -g '${{ env.RG }}' --vnet-name '${{ env.VNET }}' -n '${{ env.UntrustedSubnet }}' --address-prefixes '${{ env.UntrustedSubnetAddress }}'
             az network vnet subnet create -g '${{ env.RG }}' --vnet-name '${{ env.VNET }}' -n '${{ env.TrustedSubnet }}' --address-prefixes '${{ env.TrustedSubnetAddress }}'
-
-            OpnScriptURI=$(echo ${{ env.OpnScriptURI }} | sed -e "s_dev_${GITHUB_HEAD_REF}_")
             az deployment group validate -g '${{ env.RG }}' -n '${{ env.DEPNAME }}' -f ${{ env.TemplateFilePath }} -p ${{ env.ParamFilePath }} -p scenarioOption=${{ env.scenarioOption }} -p existingvirtualNetwork=${{ env.existingvirtualNetwork }} -p existingUntrustedSubnetName=${{ env.UntrustedSubnet }} -p existingTrustedSubnetName=${{ env.TrustedSubnet }} -p DeployWindows=${{ env.DeployWindows }} -p OpnScriptURI=$OpnScriptURI
 
   Deploy:
