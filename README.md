@@ -28,17 +28,20 @@ In case of Active-Active the URL should be <https://PublicIP:50443> for Primary 
 
 ## Updates
 
-## April-2022
-- Updated FreeBSD 13 and OPNSense 22.1
-
 ## October-2022
+
 - Updated FreeBSD 13.1 and OPNSense 22.7
 - Updated Python reference to 3.9.
 - Updated Azure Agent to 2.8.0.11.
 - Updated Azure API references.
 - Updated documentation for accepting FreeBSD terms in Azure Gallery.
 
+## April-2022
+
+- Updated FreeBSD 13 and OPNSense 22.1
+
 ### Nov-2021
+
 - Added Active-Active deployment option (using Azure Internal and External Loadbalancer and OPNsense HA settings).
 - Templates are now auto-generated under the folder ARM from a Bicep template using Github Actions.
 
